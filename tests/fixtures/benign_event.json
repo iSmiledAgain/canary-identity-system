@@ -1,0 +1,38 @@
+{
+  "version": "0",
+  "id": "b1118dc7-e242-4e48-ab7c-4c65e5a6b900",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "123456789012",
+  "time": "2026-09-05T09:00:00Z",
+  "region": "us-east-1",
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAEXAMPLE:ci-deploy",
+      "arn": "arn:aws:sts::123456789012:assumed-role/ci-deploy-role/ci-deploy",
+      "accountId": "123456789012",
+      "accessKeyId": "ASIAREALDEPLOYKEY",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "arn": "arn:aws:iam::123456789012:role/ci-deploy-role",
+          "userName": "ci-deploy-role"
+        },
+        "attributes": {
+          "mfaAuthenticated": "false",
+          "creationDate": "2026-09-05T08:59:00Z"
+        }
+      }
+    },
+    "eventTime": "2026-09-05T09:00:00Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "ListBuckets",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "203.0.113.10",
+    "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/6.5",
+    "eventID": "ev-benign-0001",
+    "recipientAccountId": "123456789012"
+  }
+}
