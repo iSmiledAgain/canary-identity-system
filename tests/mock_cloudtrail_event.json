@@ -1,0 +1,27 @@
+{
+  "version": "0",
+  "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b9d7",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.iam",
+  "account": "123456789012",
+  "time": "2026-09-05T14:30:00Z",
+  "region": "us-east-1",
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDAEXAMPLEUSER",
+      "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+      "accountId": "123456789012",
+      "accessKeyId": "AKIAIOSFODNN7CANARY",
+      "userName": "canary-prod-db-backup"
+    },
+    "eventTime": "2026-09-05T14:30:00Z",
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "GetCallerIdentity",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "198.51.100.42",
+    "userAgent": "aws-cli/2.11.0",
+    "errorCode": "AccessDenied"
+  }
+}

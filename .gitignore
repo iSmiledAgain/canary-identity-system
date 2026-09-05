@@ -1,16 +1,18 @@
-# Terraform
+# Terraform State & Local Cache
 .terraform/
 *.tfstate
 *.tfstate.backup
 *.tfvars
+.terraform.lock.hcl
 
-# Python
+# Python / Local Dev
 __pycache__/
 *.pyc
 .venv/
 env/
 
-# Environment Variables & Keys
+# Decoy Credentials & Keys
 .env
 *.pem
 credentials
+lambda_payload.zip
