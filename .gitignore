@@ -10,6 +10,9 @@ __pycache__/
 *.pyc
 .venv/
 env/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Decoy Credentials & Keys
 .env

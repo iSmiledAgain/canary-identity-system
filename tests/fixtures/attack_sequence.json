@@ -1,0 +1,293 @@
+[
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b900",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.sts",
+    "account": "123456789012",
+    "time": "2026-09-05T03:14:10Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:14:10Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": null,
+      "eventID": "ev-0000-canary",
+      "recipientAccountId": "123456789012"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b901",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "123456789012",
+    "time": "2026-09-05T03:14:22Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:14:22Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": null,
+      "eventID": "ev-0001-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: ListBuckets"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b902",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "123456789012",
+    "time": "2026-09-05T03:14:34Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:14:34Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAttachedUserPolicies",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "userName": "canary-prod-db-backup"
+      },
+      "eventID": "ev-0002-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: ListAttachedUserPolicies"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b903",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.secretsmanager",
+    "account": "123456789012",
+    "time": "2026-09-05T03:14:46Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:14:46Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "ListSecrets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": null,
+      "eventID": "ev-0003-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: ListSecrets"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b904",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.secretsmanager",
+    "account": "123456789012",
+    "time": "2026-09-05T03:14:58Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:14:58Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "secretId": "prod/db/master-password"
+      },
+      "eventID": "ev-0004-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: GetSecretValue"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b905",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.sts",
+    "account": "123456789012",
+    "time": "2026-09-05T03:15:11Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:15:11Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::123456789012:role/prod-admin-role",
+        "roleSessionName": "backup-session"
+      },
+      "eventID": "ev-0005-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: AssumeRole"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b906",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "123456789012",
+    "time": "2026-09-05T03:15:23Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:15:23Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "userName": "canary-prod-db-backup"
+      },
+      "eventID": "ev-0006-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: CreateAccessKey"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b907",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "123456789012",
+    "time": "2026-09-05T03:15:35Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:15:35Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "bucketName": "acme-prod-db-backups",
+        "key": "2026/09/dump.sql.gz"
+      },
+      "eventID": "ev-0007-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: GetObject"
+    }
+  },
+  {
+    "version": "0",
+    "id": "c7118dc7-e242-4e48-ab7c-4c65e5a6b908",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.cloudtrail",
+    "account": "123456789012",
+    "time": "2026-09-05T03:15:47Z",
+    "region": "us-east-1",
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLECANARY",
+        "arn": "arn:aws:iam::123456789012:user/canary-prod-db-backup",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAIOSFODNN7CANARY",
+        "userName": "canary-prod-db-backup"
+      },
+      "eventTime": "2026-09-05T03:15:47Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.42",
+      "userAgent": "Boto3/1.34.11 md/Botocore#1.34.11 ua/2.0 os/linux#6.5 python/3.11.6",
+      "requestParameters": {
+        "name": "acme-org-trail"
+      },
+      "eventID": "ev-0008-canary",
+      "recipientAccountId": "123456789012",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User: arn:aws:iam::123456789012:user/canary-prod-db-backup is not authorized to perform: StopLogging"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+# Runtime dependencies for the detection engine.
+#
+# Deliberately empty of third-party packages: the engine uses only the Python
+# standard library (urllib for webhooks, json/statistics for analysis) so that
+# Person A can zip src/ straight into a Lambda deployment package with no
+# vendoring step and no cold-start penalty.
+#
+# boto3 is imported lazily by src/core/timeline.py and is already present in the
+# AWS Lambda Python runtime. Install it locally only if you want to run the
+# timeline engine against a real account.
+#
+# boto3>=1.34.0
